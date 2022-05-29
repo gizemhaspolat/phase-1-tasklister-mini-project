@@ -1,7 +1,7 @@
 html {
   height: 100%;
   width: 100%;
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Lato" sans-serif !important;
 }
 
 body {
@@ -10,13 +10,10 @@ body {
   background: linear-gradient(pink, violet);
 }
 
-button {
-  font-size: 7px;
-}
-
 #main-content {
-  position: relative;
+  font-family: "Lato", sans-serif;
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -28,10 +25,64 @@ button {
 }
 
 #list {
+  font-family: "Lato", sans-serif;
   margin: 10px;
+  border: 1px solid #333;
+  background: rgba(237, 150, 197, 0.75);
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 2px 5px 5px #333;
+  min-width: 400px;
+  height: auto;
+}
+#tasks {
+  font-family: "Lato", sans-serif;
+  font-style: italic;
   border: 1px solid #333;
   background: rgba(255, 255, 255, 0.75);
   padding: 15px 20px 18px 18px;
   border-radius: 5px;
   box-shadow: 2px 5px 5px #333;
+}
+
+#sorting-button {
+  font-family: "Lato", sans-serif;
+  margin: 10px;
+  border: 1px solid #333;
+  background: rgba(226, 91, 163, 0.75);
+  padding: 10px 10px;
+  border-radius: 5px;
+  box-shadow: 2px 5px 5px #333;
+  align-self: flex-end;
+}
+#sorting-button:hover {
+  background: rgba(222, 113, 171, 0.75);
+  cursor: pointer;
+}
+#create-task-btn {
+  font-family: "Lato", sans-serif;
+  margin: 10px;
+  border: 1px solid #333;
+  background: rgba(226, 91, 163, 0.75);
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 2px 5px 5px #333;
+}
+#create-task-btn:hover {
+  background: rgba(222, 113, 171, 0.75);
+  cursor: pointer;
+}
+
+.delete-button {
+  font-family: "Lato", sans-serif;
+  margin: 5px;
+  border: 1px solid #333;
+  background: rgba(226, 91, 163, 0.75);
+  padding: 2px 5px;
+  border-radius: 5px;
+  box-shadow: 2px 5px 5px #333;
+}
+.delete-button:hover {
+  background: rgba(222, 113, 171, 0.75);
+  cursor: pointer;
 }

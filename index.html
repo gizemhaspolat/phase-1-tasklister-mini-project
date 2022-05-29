@@ -1,28 +1,46 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Flatiron Task Lister</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <div id="main-content">
-    <h1>Task Lister Lite™️</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flatiron Task Lister</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Roboto:wght@100;300;400&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="main-content">
+      <h1>Task Lister Lite™️</h1>
 
-    <form id="create-task-form" action="" method="POST">
-      <label for="new-task-description">Task description:</label>
-      <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
-      <input type="submit" value="Create New Task">
-    </form>
+      <form id="create-task-form" action="" method="POST">
+        <label for="new-task-description">Task description:</label>
+        <input
+          type="text"
+          id="new-task-description"
+          name="new-task-description"
+          placeholder="description"
+        />
+        <select name="color" id="color">
+          <option value="red" selected="selected">red</option>
+          <option value="green">green</option>
+          <option value="yellow">yellow</option>
+        </select>
+        <label for="dueDate">Due Date (date and time):</label>
+        <input type="datetime-local" id="due-date" name="duedate" />
 
-    <div id="list">
-      <h2>My Todos:</h2>
-      <ul id="tasks">
-      </ul>
+        <input type="submit" id="create-task-btn" value="Create New Task" />
+      </form>
+
+      <div id="list">
+        <h2>My Todos:</h2>
+        <ul id="tasks"></ul>
+        <button id="sorting-button">Sort by priority</button>
+      </div>
+
+      <script src="./src/index.js"></script>
     </div>
-
-    <script src="./src/index.js"></script>
-  </div>
-
-</body>
+  </body>
 </html>
